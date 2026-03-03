@@ -1,0 +1,1545 @@
+<!doctype html>
+<html lang="en" style="height: auto; min-height: 100%">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Postgraduate Modules - Stellenbosch University</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://www.google.com/s2/favicons?domain=su.ac.za&sz=256"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://www.google.com/s2/favicons?domain=su.ac.za&sz=256"
+    />
+    <meta
+      name="description"
+      content="Modern art community platform combining Instagram's visuals, TikTok's discovery, and professional networking for artists and art lovers."
+    />
+    <meta name="author" content="Zeus Chokoe, Artalk Team, Zeus Factor" />
+    <meta
+      name="description"
+      content="Modern art community platform combining Instagram's visuals, TikTok's discovery, and professional networking for artists and art lovers."
+    />
+    <meta name="author" content="Zeus Chokoe, Artalk Team, Zeus Factor" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://artalk.media/" />
+
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://artalk.media/" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      id="heading-font-link"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      id="body-font-link"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/postgraduate-modules.js"></script>
+    <script src="js/global.js"></script>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/postgraduate-modules.css" />
+  </head>
+  <body
+    class="font-body bg-background-50 text-neutral-900"
+    style="height: auto; min-height: 100%"
+  >
+    <!-- Sticky Header -->
+    <header class="sticky top-0 z-50 bg-primary-900 shadow-custom">
+      <!-- Top utility bar -->
+      <div class="bg-primary-800 border-b border-primary-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-between h-9">
+            <div class="flex items-center gap-4">
+              <span class="text-neutral-300 text-xs"
+                >Stellenbosch University</span
+              >
+              <span class="text-primary-500 text-xs">|</span>
+              <span class="text-neutral-300 text-xs">Est. 1918</span>
+            </div>
+            <div class="flex items-center gap-4">
+              <a
+                href="https://www.sun.ac.za/en/staff-portal"
+                class="text-neutral-300 text-xs hover:text-secondary-300 transition-colors"
+                >Staff Portal</a
+              >
+              <a
+                href="https://www.sun.ac.za/en/student-portal"
+                class="text-neutral-300 text-xs hover:text-secondary-300 transition-colors"
+                >Student Portal</a
+              >
+              <a
+                href="https://www.sun.ac.za/en/alumni"
+                class="text-neutral-300 text-xs hover:text-secondary-300 transition-colors"
+                >Alumni</a
+              >
+              <a
+                href="https://www.sun.ac.za/en/library"
+                class="text-neutral-300 text-xs hover:text-secondary-300 transition-colors"
+                >Library</a
+              >
+              <button
+                id="language-toggle"
+                class="text-neutral-300 text-xs hover:text-secondary-300 transition-colors"
+                aria-label="Toggle language"
+              >
+                <span id="lang-display">Afrikaans</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main nav -->
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <!-- Logo -->
+          <a href="homepage.html" class="flex items-center gap-3 flex-shrink-0">
+            <div
+              class="w-10 h-10 bg-secondary-400 rounded-small flex items-center justify-center"
+            >
+              <img
+                src="https://www.google.com/s2/favicons?domain=su.ac.za&sz=256"
+                alt="Stellenbosch University Icon"
+                style="width: 24px; height: 24px; vertical-align: middle"
+              />
+            </div>
+            <div class="hidden sm:block">
+              <div
+                class="font-heading text-neutral-50 text-base font-semibold leading-tight"
+              >
+                Stellenbosch
+              </div>
+              <div
+                class="text-secondary-300 text-xs font-medium tracking-widest uppercase"
+              >
+                University
+              </div>
+            </div>
+          </a>
+
+          <!-- Nav links -->
+          <nav class="hidden lg:flex items-center gap-1">
+            <a
+              href="about-page.html"
+              class="nav-link-hover text-neutral-200 text-sm font-medium px-3 py-2 rounded-small hover:bg-primary-800 transition-colors"
+              >About</a
+            >
+
+            <!-- Academics dropdown -->
+            <div class="dropdown relative">
+              <button
+                class="nav-link-hover text-neutral-200 text-sm font-medium px-3 py-2 rounded-small hover:bg-primary-800 transition-colors flex items-center gap-1"
+              >
+                Academics
+                <svg
+                  class="w-3.5 h-3.5 text-neutral-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+              <div
+                class="dropdown-menu hidden absolute top-full left-0 mt-1 w-52 bg-white rounded-large shadow-custom-hover border border-neutral-200 py-1 z-50"
+              >
+                <a
+                  href="undergraduate.html"
+                  class="block px-4 py-2.5 text-sm text-neutral-700 hover:bg-primary-50 hover:text-primary-700 transition-colors"
+                  >Undergraduate</a
+                >
+                <a
+                  href="postgraduate.html"
+                  class="block px-4 py-2.5 text-sm text-neutral-700 hover:bg-primary-50 hover:text-primary-700 transition-colors"
+                  >Postgraduate</a
+                >
+                <a
+                  href="research.html"
+                  class="block px-4 py-2.5 text-sm text-neutral-700 hover:bg-primary-50 hover:text-primary-700 transition-colors"
+                  >Research</a
+                >
+              </div>
+            </div>
+
+            <a
+              href="research.html"
+              class="nav-link-hover text-neutral-200 text-sm font-medium px-3 py-2 rounded-small hover:bg-primary-800 transition-colors"
+              >Research</a
+            >
+
+            <div class="dropdown relative">
+              <button
+                class="nav-link-hover text-neutral-200 text-sm font-medium px-3 py-2 rounded-small hover:bg-primary-800 transition-colors flex items-center gap-1"
+              >
+                People
+                <svg
+                  class="w-3.5 h-3.5 text-neutral-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+              <div
+                class="dropdown-menu hidden absolute top-full left-0 mt-1 w-52 bg-white rounded-large shadow-custom-hover border border-neutral-200 py-1 z-50"
+              >
+                <a
+                  href="stuff.html"
+                  class="block px-4 py-2.5 text-sm text-neutral-700 hover:bg-primary-50 hover:text-primary-700 transition-colors"
+                  >Stuff</a
+                >
+                <a
+                  href="students.html"
+                  class="block px-4 py-2.5 text-sm text-neutral-700 hover:bg-primary-50 hover:text-primary-700 transition-colors"
+                  >Students</a
+                >
+                <a
+                  href="alumni.html"
+                  class="block px-4 py-2.5 text-sm text-neutral-700 hover:bg-primary-50 hover:text-primary-700 transition-colors"
+                  >Alumni</a
+                >
+              </div>
+            </div>
+            <a
+              href="news.html"
+              class="nav-link-hover text-neutral-200 text-sm font-medium px-3 py-2 rounded-small hover:bg-primary-800 transition-colors"
+              >News</a
+            >
+            <a
+              href="contact-page.html"
+              class="nav-link-hover text-neutral-200 text-sm font-medium px-3 py-2 rounded-small hover:bg-primary-800 transition-colors"
+              >Contact</a
+            >
+          </nav>
+
+          <!-- CTA Buttons -->
+          <div class="hidden lg:flex items-center gap-2">
+            <a
+              href="undergraduate.html"
+              class="bg-secondary-400 hover:bg-secondary-300 text-primary-900 text-sm font-semibold px-4 py-2 rounded-small transition-colors"
+              >Apply Now</a
+            >
+            <button
+              id="search-button"
+              aria-label="Search site"
+              class="text-neutral-200 hover:text-neutral-50 p-2 rounded-small hover:bg-primary-800 transition-colors"
+            >
+              <svg
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Mobile menu button -->
+          <button class="lg:hidden text-neutral-200 p-2">
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main content -->
+    <main class="py-14">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 class="font-heading text-neutral-900 text-3xl font-bold mb-4">
+          Postgraduate Modules
+        </h1>
+        <p class="text-neutral-700 text-sm mb-6">
+          Core and elective modules for Honours, MSc, and PhD students in 2026.
+        </p>
+
+        <!-- Programmes Section -->
+        <div class="mt-8 mb-12">
+          <h2 class="font-heading text-2xl font-bold text-neutral-900 mb-6">
+            Programmes
+          </h2>
+          <div class="space-y-4">
+            <div class="bg-blue-50 border-l-4 border-primary-600 p-6 rounded-small">
+              <h3 class="font-semibold text-neutral-900 mb-2">Honours in Computer Science (18139-797)</h3>
+              <p class="text-neutral-700 text-sm">
+                Stream Computer Science. This stream consists of 6 modules of 16 credits each, as well as a compulsory programming project of 32 credits. At most two modules may be taken from related departments with the permission of the Computer Science. Not all modules are necessarily offered each year.
+              </p>
+            </div>
+
+            <div class="bg-blue-50 border-l-4 border-primary-600 p-6 rounded-small">
+              <h3 class="font-semibold text-neutral-900 mb-2">Masters in Computer Science (18139-878)</h3>
+              <p class="text-neutral-700 text-sm">
+                Independent research on an approved topic as determined by the supervisor(s) and leading to a thesis is required.
+              </p>
+            </div>
+
+            <div class="bg-blue-50 border-l-4 border-primary-600 p-6 rounded-small">
+              <h3 class="font-semibold text-neutral-900 mb-2">PhD in Computer Science (18139-978)</h3>
+              <p class="text-neutral-700 text-sm">
+                A dissertation containing the results of your independent research is required.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Year Module -->
+        <h3 class="font-heading text-xl font-bold text-neutral-900 mb-6">
+          Year Module
+        </h3>
+        <div class="overflow-x-auto mb-12">
+          <table class="w-full border-collapse">
+            <thead>
+              <tr class="bg-primary-700 text-white">
+                <th class="border border-neutral-300 px-4 py-3 text-left text-sm font-semibold">Code</th>
+                <th class="border border-neutral-300 px-4 py-3 text-left text-sm font-semibold">Module Name</th>
+                <th class="border border-neutral-300 px-4 py-3 text-left text-sm font-semibold">Semester</th>
+                <th class="border border-neutral-300 px-4 py-3 text-left text-sm font-semibold">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white hover:bg-blue-50 transition-colors">
+                <td class="border border-neutral-300 px-4 py-3 text-sm font-semibold text-primary-700">63444-771</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm font-semibold">Honours Project in Computer Science</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm">1st & 2nd</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm text-neutral-700">A large software construction or research problem on which the student works independently, under the supervision of a staff member.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- First Semester Modules -->
+        <h3 class="font-heading text-xl font-bold text-neutral-900 mb-6">
+          First Semester Modules
+        </h3>
+        <div class="overflow-x-auto mb-12">
+          <table class="w-full border-collapse">
+            <thead>
+              <tr class="bg-primary-700 text-white">
+                <th class="border border-neutral-300 px-4 py-3 text-left text-sm font-semibold">Code</th>
+                <th class="border border-neutral-300 px-4 py-3 text-left text-sm font-semibold">Module Name</th>
+                <th class="border border-neutral-300 px-4 py-3 text-left text-sm font-semibold">Instructor</th>
+                <th class="border border-neutral-300 px-4 py-3 text-left text-sm font-semibold">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white hover:bg-blue-50 transition-colors">
+                <td class="border border-neutral-300 px-4 py-3 text-sm font-semibold text-primary-700">64947-712</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm font-semibold">Advanced Algorithms</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm">Willem Bester</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm text-neutral-700">This module continues from Computer Science 214 and covers advanced topics in the design and analysis of algorithms and associated data structure. Topics include a selection from algorithm design techniques, linear programming, approximation algorithms, randomised algorithms, probabilistic algorithms, parallel algorithms, number-theoretic algorithms, cryptanalysis, computational geometry, computational biology, network algorithms, and complexity theory.</td>
+              </tr>
+              <tr class="bg-neutral-50 hover:bg-blue-50 transition-colors">
+                <td class="border border-neutral-300 px-4 py-3 text-sm font-semibold text-primary-700">64971-716</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm font-semibold">Adv. Topics I - Vulnerability Discovery and Exploitation</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm">Fabian Yamaguchi</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm text-neutral-700">This module provides an introduction to the discovery and exploitation of vulnerabilities in software systems. We learn to uncover vulnerabilities and demonstrate their exploitability and then proceed to focus on methods for automating parts of the discovery process, both via static and dynamic program analysis.</td>
+              </tr>
+              <tr class="bg-white hover:bg-blue-50 transition-colors">
+                <td class="border border-neutral-300 px-4 py-3 text-sm font-semibold text-primary-700">65048-746</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm font-semibold">Adv. Topics II - Ontology Engineering</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm">Maria Keet</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm text-neutral-700">The principal aim of this module is to provide the participant with an overview of ontology engineering—including knowledge representation languages, automated reasoning, and methods and techniques for ontology development—and main application fields. Topics covered include logic foundations for ontologies, ontology engineering methodologies, and current research topics.</td>
+              </tr>
+              <tr class="bg-neutral-50 hover:bg-blue-50 transition-colors">
+                <td class="border border-neutral-300 px-4 py-3 text-sm font-semibold text-primary-700">14533-771</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm font-semibold">Computing and Society</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm">William Tucker</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm text-neutral-700">Theory, domains and critique of topics related to Computing and Society, such as human-centred computing; social development theories, critical analysis of case studies; methods and ethics; and challenges of sustainable community engagement.</td>
+              </tr>
+              <tr class="bg-white hover:bg-blue-50 transition-colors">
+                <td class="border border-neutral-300 px-4 py-3 text-sm font-semibold text-primary-700">14232-791</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm font-semibold">Artificial Intelligence</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm">Andries Engelbrecht</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm text-neutral-700">Introduction to a selection of topics in artificial intelligence and optimisation. Meta-heuristics. Swarm intelligence, evolutionary computation, and hyper-heuristics. Optimisation problems including unconstrained, constrained, multi-objective, and dynamic optimisation problems.</td>
+              </tr>
+              <tr class="bg-neutral-50 hover:bg-blue-50 transition-colors">
+                <td class="border border-neutral-300 px-4 py-3 text-sm font-semibold text-primary-700">13944-795</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm font-semibold">Functional Programming</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm">Brink van der Merwe</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm text-neutral-700">This module gives an introduction to the functional programming paradigm.</td>
+              </tr>
+              <tr class="bg-white hover:bg-blue-50 transition-colors">
+                <td class="border border-neutral-300 px-4 py-3 text-sm font-semibold text-primary-700">14195-742</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm font-semibold">Machine Learning A</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm">Steve Kroon</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm text-neutral-700">Prominent machine-learning concepts and tasks. Selected feature extraction or dimensionality reduction techniques. Introduction to probabilistic modelling and latent variable models. Fundamental paradigms in parameter estimation.</td>
+              </tr>
+              <tr class="bg-neutral-50 hover:bg-blue-50 transition-colors">
+                <td class="border border-neutral-300 px-4 py-3 text-sm font-semibold text-primary-700">14530-711</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm font-semibold">Computer Networks</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm">William Tucker</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm text-neutral-700">Introduction to networks in general and the internet in particular. Architecture and protocols. Allocation of resources and congestion control. Network security. Applications.</td>
+              </tr>
+              <tr class="bg-white hover:bg-blue-50 transition-colors">
+                <td class="border border-neutral-300 px-4 py-3 text-sm font-semibold text-primary-700">64963-714</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm font-semibold">Concurrent Programming I</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm">Cornelia Inggs</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm text-neutral-700">An overview of the field of concurrency, its theoretical principles, the design, implementation and verification of concurrent systems, and practical aspects of distributed and parallel programming focused on selected important topics.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Second Semester Modules -->
+        <h3 class="font-heading text-xl font-bold text-neutral-900 mb-6">
+          Second Semester Modules
+        </h3>
+        <div class="overflow-x-auto mb-12">
+          <table class="w-full border-collapse">
+            <thead>
+              <tr class="bg-primary-700 text-white">
+                <th class="border border-neutral-300 px-4 py-3 text-left text-sm font-semibold">Code</th>
+                <th class="border border-neutral-300 px-4 py-3 text-left text-sm font-semibold">Module Name</th>
+                <th class="border border-neutral-300 px-4 py-3 text-left text-sm font-semibold">Instructor</th>
+                <th class="border border-neutral-300 px-4 py-3 text-left text-sm font-semibold">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white hover:bg-blue-50 transition-colors">
+                <td class="border border-neutral-300 px-4 py-3 text-sm font-semibold text-primary-700">11788-741</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm font-semibold">Machine Learning</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm">Andries Engelbrecht</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm text-neutral-700">This module is an introduction to selected topics in machine learning.</td>
+              </tr>
+              <tr class="bg-neutral-50 hover:bg-blue-50 transition-colors">
+                <td class="border border-neutral-300 px-4 py-3 text-sm font-semibold text-primary-700">65021-745</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm font-semibold">Software Construction - Compilers</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm">Bernd Fischer</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm text-neutral-700">Compiler design and software construction techniques for building programming language tools and compilers.</td>
+              </tr>
+              <tr class="bg-white hover:bg-blue-50 transition-colors">
+                <td class="border border-neutral-300 px-4 py-3 text-sm font-semibold text-primary-700">14531-771</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm font-semibold">Principles of Data Science</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm">Marcel Dunaiski</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm text-neutral-700">This course covers the typical pipeline of data science projects: information retrieval, data wrangling and exploratory data analysis, hypothesis testing and regression analysis, as well as visualisations and data ethics.</td>
+              </tr>
+              <tr class="bg-neutral-50 hover:bg-blue-50 transition-colors">
+                <td class="border border-neutral-300 px-4 py-3 text-sm font-semibold text-primary-700">14066-791</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm font-semibold">Space Science Algorithms</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm">Trienko Grobler</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm text-neutral-700">Algorithms and techniques in Space Science, with applications.</td>
+              </tr>
+              <tr class="bg-white hover:bg-blue-50 transition-colors">
+                <td class="border border-neutral-300 px-4 py-3 text-sm font-semibold text-primary-700">14888-743</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm font-semibold">Machine Learning and AI I - Cognitive Robotics</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm">Gavin Rens</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm text-neutral-700">Topics in artificial intelligence and cognitive robotics. Logic and knowledge representation, the Prolog language, deterministic automated planning, dynamic Bayesian networks, probabilistic planning, and reinforcement learning.</td>
+              </tr>
+              <tr class="bg-neutral-50 hover:bg-blue-50 transition-colors">
+                <td class="border border-neutral-300 px-4 py-3 text-sm font-semibold text-primary-700">14065-796</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm font-semibold">Software Testing and Analysis</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm">Cornelia Inggs, Bernd Fischer, Willem Visser</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm text-neutral-700">Introduction to various techniques for software quality management.</td>
+              </tr>
+              <tr class="bg-white hover:bg-blue-50 transition-colors">
+                <td class="border border-neutral-300 px-4 py-3 text-sm font-semibold text-primary-700">63452-711</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm font-semibold">Automata Theory & Applications</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm">Brink van der Merwe</td>
+                <td class="border border-neutral-300 px-4 py-3 text-sm text-neutral-700">A first introduction to theoretical computer science, covering the Chomsky hierarchy of languages in relation to computability. Regular languages, context-free languages and grammars. Turing machines.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-neutral-900 pt-14 pb-6" style="max-height: 600px">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-10">
+          <!-- Brand -->
+          <div class="lg:col-span-2">
+              <p class="text-neutral-700 text-sm">
+                The Data Science focal area combines a Computer Science major
+                with Statistics and Data Science modules. Please consult Section
+                4.4.3 of the Science calendar for a list of the compulsory and
+                elective modules for this focal area.
+              </p>
+            </div>
+
+            <div
+              class="bg-blue-50 border-l-4 border-primary-600 p-6 rounded-small"
+            >
+              <h4 class="font-semibold text-neutral-900 mb-2">
+                Focus Computer Science with Genetics
+              </h4>
+              <p class="text-neutral-700 text-sm mb-3">Code: 18139</p>
+              <p class="text-neutral-700 text-sm">
+                This focal area combines Computer Science with Genetics as
+                second major. Please consult Section 4.4.4 of the Science
+                calendar for a list of the compulsory and elective modules for
+                this focal area.
+              </p>
+            </div>
+
+            <div
+              class="bg-blue-50 border-l-4 border-primary-600 p-6 rounded-small"
+            >
+              <h4 class="font-semibold text-neutral-900 mb-2">
+                Focus CS with GIT
+              </h4>
+              <p class="text-neutral-700 text-sm mb-3">Code: 18139</p>
+              <p class="text-neutral-700 text-sm">
+                Computer Science with Geographical Information Technology as
+                second major. Please consult Section 4.4.5 of the Science
+                calendar for a list of the compulsory and elective modules for
+                this focal area.
+              </p>
+            </div>
+          </div>
+
+          <!-- BDatSci Programme Section -->
+          <h3
+            class="font-heading text-xl font-bold text-neutral-900 mt-10 mb-6"
+          >
+            BDatSci Programme
+          </h3>
+
+          <div
+            class="bg-blue-50 border-l-4 border-primary-600 p-6 rounded-small mb-8"
+          >
+            <h4 class="font-semibold text-neutral-900 mb-2">
+              Focus Computer Science (CS)
+            </h4>
+            <p class="text-neutral-700 text-sm mb-3">Code: 18139</p>
+            <p class="text-neutral-700 text-sm">
+              BDatSci with focal area Computer Science combines Computer Science
+              with Statistics and Data Science modules. BDatSci is a four-year
+              degree, which consists of a set of core compulsory modules on all
+              year levels. Please consult Section 4.6.1 of the Science calendar
+              for a list of the modules for this focal area.
+            </p>
+          </div>
+
+          <!-- First Year Modules -->
+          <h4 class="font-heading text-lg font-bold text-neutral-900 mt-8 mb-4">
+            First Year CS Modules
+          </h4>
+          <div class="overflow-x-auto mb-12">
+            <table class="w-full border-collapse">
+              <thead>
+                <tr class="bg-primary-700 text-white">
+                  <th
+                    class="border border-neutral-300 px-4 py-3 text-left text-sm font-semibold"
+                  >
+                    Code
+                  </th>
+                  <th
+                    class="border border-neutral-300 px-4 py-3 text-left text-sm font-semibold"
+                  >
+                    Module Name
+                  </th>
+                  <th
+                    class="border border-neutral-300 px-4 py-3 text-left text-sm font-semibold"
+                  >
+                    Semester
+                  </th>
+                  <th
+                    class="border border-neutral-300 px-4 py-3 text-left text-sm font-semibold"
+                  >
+                    Description
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-white hover:bg-blue-50 transition-colors">
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm font-semibold text-primary-700"
+                  >
+                    CS113
+                  </td>
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm font-semibold"
+                  >
+                    Computer Science for Actuarial Studies
+                  </td>
+                  <td class="border border-neutral-300 px-4 py-3 text-sm">
+                    1st
+                  </td>
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm text-neutral-700"
+                  >
+                    Introduction to computer programming from a financial
+                    perspective. Basic financial problems are rephrased in terms
+                    of analytical problem solving. Standard imperative
+                    programming constructs including types of variables,
+                    assignments, if-then-else and loops, and recursive
+                    approaches are covered as needed in financial programming.
+                    Static data structures (in particular arrays) and
+                    declarative programming models such as spreadsheets are also
+                    covered.
+                  </td>
+                </tr>
+                <tr class="bg-neutral-50 hover:bg-blue-50 transition-colors">
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm font-semibold text-primary-700"
+                  >
+                    CS114
+                  </td>
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm font-semibold"
+                  >
+                    Introductory Computer Science 1
+                  </td>
+                  <td class="border border-neutral-300 px-4 py-3 text-sm">
+                    1st
+                  </td>
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm text-neutral-700"
+                  >
+                    Introduction to basic computer programming; formulation and
+                    solution of problems by means of computer programming; data
+                    representation and variable types (including character
+                    strings, integers, floating point numbers and Boolean
+                    variables); assignment statements; conditional execution and
+                    iteration; static data structures (arrays and records);
+                    input and output (including graphics and sound); modular
+                    programming; recursion; testing and debugging; introduction
+                    to object-oriented programming (including abstraction,
+                    encapsulation and use of existing object implementations).
+                  </td>
+                </tr>
+                <tr class="bg-white hover:bg-blue-50 transition-colors">
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm font-semibold text-primary-700"
+                  >
+                    CS144
+                  </td>
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm font-semibold"
+                  >
+                    Introductory Computer Science 2
+                  </td>
+                  <td class="border border-neutral-300 px-4 py-3 text-sm">
+                    2nd
+                  </td>
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm text-neutral-700"
+                  >
+                    Further formulation and solution of problems by means of
+                    computer programming; introductory data structures and
+                    algorithms in an object-oriented set-up; key concepts in
+                    object orientation: inheritance and polymorphism; design
+                    patterns as abstractions for the creation of reusable
+                    object-oriented designs; searching and sorting algorithms;
+                    complexity theory for the analysis of algorithms;
+                    fundamental methods in the design of algorithms; dynamic
+                    data structures; regular expressions and finite automata.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Second Year Modules -->
+          <h4 class="font-heading text-lg font-bold text-neutral-900 mb-4">
+            Second Year CS Modules
+          </h4>
+          <div class="overflow-x-auto mb-12">
+            <table class="w-full border-collapse">
+              <thead>
+                <tr class="bg-primary-700 text-white">
+                  <th
+                    class="border border-neutral-300 px-4 py-3 text-left text-sm font-semibold"
+                  >
+                    Code
+                  </th>
+                  <th
+                    class="border border-neutral-300 px-4 py-3 text-left text-sm font-semibold"
+                  >
+                    Module Name
+                  </th>
+                  <th
+                    class="border border-neutral-300 px-4 py-3 text-left text-sm font-semibold"
+                  >
+                    Semester
+                  </th>
+                  <th
+                    class="border border-neutral-300 px-4 py-3 text-left text-sm font-semibold"
+                  >
+                    Description
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-white hover:bg-blue-50 transition-colors">
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm font-semibold text-primary-700"
+                  >
+                    CSE214
+                  </td>
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm font-semibold"
+                  >
+                    Object-Oriented Programming
+                  </td>
+                  <td class="border border-neutral-300 px-4 py-3 text-sm">
+                    1st
+                  </td>
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm text-neutral-700"
+                  >
+                    Formulation and solution of problems by means of computer
+                    programming in an object-oriented set-up; principles of
+                    testing and debugging; key concepts in object orientation:
+                    abstraction, encapsulation, inheritance and polymorphism;
+                    design patterns as abstractions for the creation of reusable
+                    object oriented designs; searching and sorting algorithms;
+                    complexity theory for the analysis of algorithms;
+                    fundamental methods in the design of algorithms; dynamic
+                    data structures.
+                  </td>
+                </tr>
+                <tr class="bg-neutral-50 hover:bg-blue-50 transition-colors">
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm font-semibold text-primary-700"
+                  >
+                    CS214
+                  </td>
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm font-semibold"
+                  >
+                    Data Structures and Algorithms
+                  </td>
+                  <td class="border border-neutral-300 px-4 py-3 text-sm">
+                    1st
+                  </td>
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm text-neutral-700"
+                  >
+                    The classical data structures and algorithms in an
+                    object-oriented set-up. Advanced techniques for the analysis
+                    of algorithms.
+                  </td>
+                </tr>
+                <tr class="bg-white hover:bg-blue-50 transition-colors">
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm font-semibold text-primary-700"
+                  >
+                    CS244
+                  </td>
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm font-semibold"
+                  >
+                    Computer Architecture
+                  </td>
+                  <td class="border border-neutral-300 px-4 py-3 text-sm">
+                    2nd
+                  </td>
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm text-neutral-700"
+                  >
+                    Basic computer architecture. Programming in machine language
+                    and assembly language. Assemblers, binders and loaders.
+                    Basic concepts of operating systems; memory management,
+                    process management and file systems.
+                  </td>
+                </tr>
+                <tr class="bg-neutral-50 hover:bg-blue-50 transition-colors">
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm font-semibold text-primary-700"
+                  >
+                    SC272
+                  </td>
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm font-semibold"
+                  >
+                    Scientific Computing
+                  </td>
+                  <td class="border border-neutral-300 px-4 py-3 text-sm">
+                    1st & 2nd
+                  </td>
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm text-neutral-700"
+                  >
+                    Introduction to Linux; Linux commands; Linux file systems;
+                    editors; process control. Introduction to programming in
+                    Python: variables, types, control structures, loop
+                    structures, functions, files and directories, strings, unit
+                    testing, basic data processing. Introduction to numerical
+                    computing using Numpy; plotting and curve fitting.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Third Year Modules -->
+          <h4 class="font-heading text-lg font-bold text-neutral-900 mb-4">
+            Third Year CS Modules
+          </h4>
+          <div class="overflow-x-auto mb-12">
+            <table class="w-full border-collapse">
+              <thead>
+                <tr class="bg-primary-700 text-white">
+                  <th
+                    class="border border-neutral-300 px-4 py-3 text-left text-sm font-semibold"
+                  >
+                    Code
+                  </th>
+                  <th
+                    class="border border-neutral-300 px-4 py-3 text-left text-sm font-semibold"
+                  >
+                    Module Name
+                  </th>
+                  <th
+                    class="border border-neutral-300 px-4 py-3 text-left text-sm font-semibold"
+                  >
+                    Semester
+                  </th>
+                  <th
+                    class="border border-neutral-300 px-4 py-3 text-left text-sm font-semibold"
+                  >
+                    Description
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-white hover:bg-blue-50 transition-colors">
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm font-semibold text-primary-700"
+                  >
+                    CS313
+                  </td>
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm font-semibold"
+                  >
+                    Computer Networks
+                  </td>
+                  <td class="border border-neutral-300 px-4 py-3 text-sm">
+                    1st
+                  </td>
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm text-neutral-700"
+                  >
+                    Introduction to networks in general and the internet in
+                    particular. Architecture and protocols. Allocation of
+                    resources and congestion control. Network security.
+                    Applications.
+                  </td>
+                </tr>
+                <tr class="bg-neutral-50 hover:bg-blue-50 transition-colors">
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm font-semibold text-primary-700"
+                  >
+                    CS314
+                  </td>
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm font-semibold"
+                  >
+                    Concurrency
+                  </td>
+                  <td class="border border-neutral-300 px-4 py-3 text-sm">
+                    1st
+                  </td>
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm text-neutral-700"
+                  >
+                    Introduction to programming techniques and principles of
+                    concurrent systems, from operating systems to application
+                    programs. This includes communication, synchronisation,
+                    scheduling and load balancing. Several parallel and
+                    distributed architectures will be covered.
+                  </td>
+                </tr>
+                <tr class="bg-white hover:bg-blue-50 transition-colors">
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm font-semibold text-primary-700"
+                  >
+                    CS315
+                  </td>
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm font-semibold"
+                  >
+                    Machine Learning
+                  </td>
+                  <td class="border border-neutral-300 px-4 py-3 text-sm">
+                    1st
+                  </td>
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm text-neutral-700"
+                  >
+                    Dimension reduction techniques; machine-learning techniques
+                    based on maximum-likelihood, maximum-posterior and
+                    expectation-maximization estimates; modelling using logistic
+                    regression, Gaussian mixtures and hidden Markov models.
+                  </td>
+                </tr>
+                <tr class="bg-neutral-50 hover:bg-blue-50 transition-colors">
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm font-semibold text-primary-700"
+                  >
+                    CS343
+                  </td>
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm font-semibold"
+                  >
+                    Databases and Web Centric Programming
+                  </td>
+                  <td class="border border-neutral-300 px-4 py-3 text-sm">
+                    2nd
+                  </td>
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm text-neutral-700"
+                  >
+                    Introduction to relational databases. Mapping relational
+                    model onto object model. Implementing a database application
+                    in the context of the web. Web services. Server-side
+                    scalability. Virtualisation. Cloud Computing.
+                  </td>
+                </tr>
+                <tr class="bg-white hover:bg-blue-50 transition-colors">
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm font-semibold text-primary-700"
+                  >
+                    CS344
+                  </td>
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm font-semibold"
+                  >
+                    Program Design
+                  </td>
+                  <td class="border border-neutral-300 px-4 py-3 text-sm">
+                    2nd
+                  </td>
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm text-neutral-700"
+                  >
+                    Program specifications as guidelines for program design;
+                    reusable frameworks for program design; testability of
+                    program designs; development of a medium-sized system to
+                    illustrate the practical application of the principles of
+                    program design.
+                  </td>
+                </tr>
+                <tr class="bg-neutral-50 hover:bg-blue-50 transition-colors">
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm font-semibold text-primary-700"
+                  >
+                    CS345
+                  </td>
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm font-semibold"
+                  >
+                    Computability and Automata Theory
+                  </td>
+                  <td class="border border-neutral-300 px-4 py-3 text-sm">
+                    2nd
+                  </td>
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm text-neutral-700"
+                  >
+                    Introduction to automata theory and formal languages,
+                    computability and complexity. Regular languages,
+                    context-free languages and grammars. Turing machines. P vs
+                    NP problem and NP completeness.
+                  </td>
+                </tr>
+                <tr class="bg-white hover:bg-blue-50 transition-colors">
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm font-semibold text-primary-700"
+                  >
+                    SC372
+                  </td>
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm font-semibold"
+                  >
+                    Scientific Computing
+                  </td>
+                  <td class="border border-neutral-300 px-4 py-3 text-sm">
+                    1st & 2nd
+                  </td>
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm text-neutral-700"
+                  >
+                    Scientific-document construction and presentations in LaTeX.
+                    Regular expressions. Important algorithms including sorting,
+                    searching and random-number generation. Advanced computing
+                    in Python with Numpy and Scipy; applications including
+                    pattern searching, processing of large empirical data sets
+                    and constructing data-processing pipelines. Other scientific
+                    tools in Linux.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Fourth Year Modules -->
+          <h4 class="font-heading text-lg font-bold text-neutral-900 mb-4">
+            Fourth Year CS Modules for BDatSci
+          </h4>
+          <div class="overflow-x-auto mb-12">
+            <table class="w-full border-collapse">
+              <thead>
+                <tr class="bg-primary-700 text-white">
+                  <th
+                    class="border border-neutral-300 px-4 py-3 text-left text-sm font-semibold"
+                  >
+                    Code
+                  </th>
+                  <th
+                    class="border border-neutral-300 px-4 py-3 text-left text-sm font-semibold"
+                  >
+                    Module Name
+                  </th>
+                  <th
+                    class="border border-neutral-300 px-4 py-3 text-left text-sm font-semibold"
+                  >
+                    Semester
+                  </th>
+                  <th
+                    class="border border-neutral-300 px-4 py-3 text-left text-sm font-semibold"
+                  >
+                    Description
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-white hover:bg-blue-50 transition-colors">
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm font-semibold text-primary-700"
+                  >
+                    CS411
+                  </td>
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm font-semibold"
+                  >
+                    Computer Networks
+                  </td>
+                  <td class="border border-neutral-300 px-4 py-3 text-sm">
+                    1st
+                  </td>
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm text-neutral-700"
+                  >
+                    Introduction to networks in general and the internet in
+                    particular. Architecture and protocols. Allocation of
+                    resources and congestion control. Network security. Network
+                    applications. Network research technique.
+                  </td>
+                </tr>
+                <tr class="bg-neutral-50 hover:bg-blue-50 transition-colors">
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm font-semibold text-primary-700"
+                  >
+                    E414
+                  </td>
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm font-semibold"
+                  >
+                    Machine Learning
+                  </td>
+                  <td class="border border-neutral-300 px-4 py-3 text-sm">
+                    1st
+                  </td>
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm text-neutral-700"
+                  >
+                    Dimension reduction techniques; machine-learning techniques
+                    based on maximum-likelihood, maximum-posterior and
+                    expectation-maximization estimates; modelling using logistic
+                    regression, Gaussian mixtures and hidden Markov models.
+                  </td>
+                </tr>
+                <tr class="bg-white hover:bg-blue-50 transition-colors">
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm font-semibold text-primary-700"
+                  >
+                    CS412
+                  </td>
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm font-semibold"
+                  >
+                    Advanced Algorithms
+                  </td>
+                  <td class="border border-neutral-300 px-4 py-3 text-sm">
+                    1st
+                  </td>
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm text-neutral-700"
+                  >
+                    This module continues from Computer Science 214 and covers
+                    advanced topics in the design and analysis of algorithms and
+                    associated data structure. Topics include a selection from
+                    algorithm design techniques, linear programming,
+                    approximation algorithms, randomised algorithms,
+                    probabilistic algorithms, parallel algorithms,
+                    number-theoretic algorithms, cryptanalysis, computational
+                    geometry, computational biology, network algorithms, and
+                    complexity theory.
+                  </td>
+                </tr>
+                <tr class="bg-neutral-50 hover:bg-blue-50 transition-colors">
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm font-semibold text-primary-700"
+                  >
+                    CS441
+                  </td>
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm font-semibold"
+                  >
+                    Machine Learning
+                  </td>
+                  <td class="border border-neutral-300 px-4 py-3 text-sm">
+                    2nd
+                  </td>
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm text-neutral-700"
+                  >
+                    This module is an introduction to selected topics in machine
+                    learning.
+                  </td>
+                </tr>
+                <tr class="bg-white hover:bg-blue-50 transition-colors">
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm font-semibold text-primary-700"
+                  >
+                    CS471
+                  </td>
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm font-semibold"
+                  >
+                    Data Science Research Assignment
+                  </td>
+                  <td class="border border-neutral-300 px-4 py-3 text-sm">
+                    2nd
+                  </td>
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm text-neutral-700"
+                  >
+                    The research assignment provides students with a
+                    comprehensive learning experience that integrates knowledge
+                    from previous courses. The student will integrate knowledge
+                    and experiences gained from all previous modules and apply
+                    this to a data-rich research topic. Students will have the
+                    opportunity to synthesise what they have learned and apply
+                    that knowledge to new, complex situations. Students should
+                    engage in the entire process of solving a real-world data
+                    science problem, from collecting and processing actual data,
+                    to applying suitable and appropriate analytic methods to the
+                    problem, and communicating the results in a clear and
+                    comprehensive way.
+                  </td>
+                </tr>
+                <tr class="bg-neutral-50 hover:bg-blue-50 transition-colors">
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm font-semibold text-primary-700"
+                  >
+                    CS491
+                  </td>
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm font-semibold"
+                  >
+                    Space Science Algorithms
+                  </td>
+                  <td class="border border-neutral-300 px-4 py-3 text-sm">
+                    2nd
+                  </td>
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm text-neutral-700"
+                  >
+                    Algorithms and techniques in Space Science, with
+                    applications.
+                  </td>
+                </tr>
+                <tr class="bg-white hover:bg-blue-50 transition-colors">
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm font-semibold text-primary-700"
+                  >
+                    CS495
+                  </td>
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm font-semibold"
+                  >
+                    Functional Programming
+                  </td>
+                  <td class="border border-neutral-300 px-4 py-3 text-sm">
+                    N/A
+                  </td>
+                  <td
+                    class="border border-neutral-300 px-4 py-3 text-sm text-neutral-700"
+                  >
+                    This module gives an introduction to the functional
+                    programming paradigm.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main> -->
+
+    <!-- Footer -->
+    <footer class="bg-neutral-900 pt-14 pb-6" style="max-height: 600px">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-10">
+          <!-- Brand -->
+          <div class="lg:col-span-2">
+            <div class="flex items-center gap-3 mb-4">
+              <div
+                class="w-10 h-10 bg-secondary-400 rounded-small flex items-center justify-center"
+              >
+                <img
+                  src="https://www.google.com/s2/favicons?domain=su.ac.za&sz=256"
+                  alt="Stellenbosch University Icon"
+                  style="width: 24px; height: 24px; vertical-align: middle"
+                />
+              </div>
+              <div>
+                <div
+                  class="font-heading text-neutral-50 text-base font-semibold leading-tight"
+                >
+                  Stellenbosch University
+                </div>
+                <div
+                  class="text-secondary-400 text-xs tracking-widest uppercase"
+                >
+                  Est. 1918
+                </div>
+              </div>
+            </div>
+            <p class="text-neutral-400 text-sm leading-relaxed mb-5 max-w-xs">
+              A leading African research university committed to excellence,
+              innovation, and inclusive education for a better world.
+            </p>
+            <div class="flex gap-3">
+              <a
+                target="_blank"
+                href="https://www.facebook.com/stellenboschuniversity"
+                class="w-8 h-8 bg-primary-800 rounded-small flex items-center justify-center hover:bg-primary-700 transition-colors"
+              >
+                <svg
+                  class="w-4 h-4 text-neutral-300"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                  />
+                </svg>
+              </a>
+              <a
+                target="_blank"
+                href="https://twitter.com/stellenboschuni"
+                class="w-8 h-8 bg-primary-800 rounded-small flex items-center justify-center hover:bg-primary-700 transition-colors"
+              >
+                <svg
+                  class="w-4 h-4 text-neutral-300"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                  />
+                </svg>
+              </a>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/school/stellenbosch-university/"
+                class="w-8 h-8 bg-primary-800 rounded-small flex items-center justify-center hover:bg-primary-700 transition-colors"
+              >
+                <svg
+                  class="w-4 h-4 text-neutral-300"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                  />
+                </svg>
+              </a>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/stellenboschuniversity/"
+                class="w-8 h-8 bg-primary-800 rounded-small flex items-center justify-center hover:bg-primary-700 transition-colors"
+              >
+                <svg
+                  class="w-4 h-4 text-neutral-300"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12.316 3.347c-.55-.197-1.15-.296-1.76-.296s-1.21.099-1.76.296c-.55.197-.988.583-1.24 1.03l-.75 1.25c-.25.447-.38 1.03-.38 1.64v7c0 .613.13 1.207.38 1.64l.75 1.25c.254.447.692.833 1.24 1.03s1.21.197 1.76.296c.55-.099 1.21-.099 1.76-.296s1-.583 1.24-1l .75-1 .75-1c .25-.447 .38- .833 .38- .833l .75 - .75c .25 - .447 .38 - .833 .38 -  - v - c - s - c - s - c - s - c - s - c - s - c - s - c - s - c - s -. "
+                  />
+                </svg>
+              </a>
+              <a
+                target="_blank"
+                href="https://www.youtube.com/stellenboschuniversity"
+                class="w-8 h-8 bg-primary-800 rounded-small flex items-center justify-center hover:bg-primary-700 transition-colors"
+              >
+                <svg
+                  class="w-4 h-4 text-neutral-300"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10 12.5v-9l7 7z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Links -->
+          <div>
+            <h4
+              class="font-heading text-neutral-200 text-sm font-semibold mb-4 uppercase tracking-wide"
+            >
+              Academics
+            </h4>
+            <ul class="space-y-2.5">
+              <li>
+                <a
+                  href="undergraduate.html"
+                  class="text-neutral-400 text-sm hover:text-secondary-300 transition-colors"
+                  >Undergraduate</a
+                >
+              </li>
+              <li>
+                <a
+                  href="postgraduate.html"
+                  class="text-neutral-400 text-sm hover:text-secondary-300 transition-colors"
+                  >Postgraduate</a
+                >
+              </li>
+              <li>
+                <a
+                  href="research.html"
+                  class="text-neutral-400 text-sm hover:text-secondary-300 transition-colors"
+                  >Research</a
+                >
+              </li>
+              <li>
+                <a
+                  href="faculties.html"
+                  class="text-neutral-400 text-sm hover:text-secondary-300 transition-colors"
+                  >Faculties</a
+                >
+              </li>
+              <li>
+                <a
+                  href="short-courses.html"
+                  class="text-neutral-400 text-sm hover:text-secondary-300 transition-colors"
+                  >Short Courses</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4
+              class="font-heading text-neutral-200 text-sm font-semibold mb-4 uppercase tracking-wide"
+            >
+              About SU
+            </h4>
+            <ul class="space-y-2.5">
+              <li>
+                <a
+                  href="about-page.html"
+                  class="text-neutral-400 text-sm hover:text-secondary-300 transition-colors"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="people.html"
+                  class="text-neutral-400 text-sm hover:text-secondary-300 transition-colors"
+                  >People</a
+                >
+              </li>
+              <li>
+                <a
+                  href="news.html"
+                  class="text-neutral-400 text-sm hover:text-secondary-300 transition-colors"
+                  >News</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="http://www.campusmap.sun.ac.za"
+                  class="text-neutral-400 text-sm hover:text-secondary-300 transition-colors"
+                  >Campus Map</a
+                >
+              </li>
+              <li>
+                <a
+                  href="sustainability.html"
+                  class="text-neutral-400 text-sm hover:text-secondary-300 transition-colors"
+                  >Sustainability</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4
+              class="font-heading text-neutral-200 text-sm font-semibold mb-4 uppercase tracking-wide"
+            >
+              Contact
+            </h4>
+            <ul class="space-y-2.5">
+              <li class="flex items-start gap-2">
+                <svg
+                  class="w-4 h-4 text-neutral-500 mt-0.5 flex-shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+                <span
+                  class="text-neutral-400 text-xs leading-relaxed"
+                  href="https://maps.google.com/?cid=14646205923334500851&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ"
+                  >Victoria St, Stellenbosch, 7600, South Africa</span
+                >
+              </li>
+              <li class="flex items-center gap-2">
+                <svg
+                  class="w-4 h-4 text-neutral-500 flex-shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  />
+                </svg>
+                <span class="text-neutral-400 text-xs">+27 21 808 9111</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <svg
+                  class="w-4 h-4 text-neutral-500 flex-shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  />
+                </svg>
+                <span class="text-neutral-400 text-xs">+27 61 729 8858</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <svg
+                  class="w-4 h-4 text-neutral-500 flex-shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
+                </svg>
+                <a
+                  href="mailto:info@sun.ac.za/webmail"
+                  class="text-neutral-400 text-xs hover:text-secondary-300 transition-colors"
+                  >info@sun.ac.za</a
+                >
+              </li>
+              <li class="flex items-center gap-2">
+                <svg
+                  class="w-4 h-4 text-neutral-500 flex-shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  />
+                </svg>
+                <span class="text-neutral-400 text-xs"
+                  >Week days 8:00 - 16:30</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Footer bottom -->
+        <div
+          class="border-t border-neutral-800 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3"
+        >
+          <p class="text-neutral-500 text-xs">
+            © 2026 Stellenbosch University & Zeus Factor. All rights reserved.
+          </p>
+          <div class="flex gap-4">
+            <a
+              href="privacy-policy.html"
+              class="text-neutral-500 text-xs hover:text-neutral-300 transition-colors"
+              >Privacy Policy</a
+            >
+            <a
+              href="terms-of-use.html"
+              class="text-neutral-500 text-xs hover:text-neutral-300 transition-colors"
+              >Terms of Use</a
+            >
+            <a
+              href="accessibility.html"
+              class="text-neutral-500 text-xs hover:text-neutral-300 transition-colors"
+              >Accessibility</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
