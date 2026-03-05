@@ -222,13 +222,93 @@ function applyTranslations() {
     });
 }
 
+function initMobileMenu() {
+    const mobileBtn = document.getElementById('mobile-menu-button');
+    const nav = document.querySelector('header nav');
+
+    if (mobileBtn && nav) {
+        mobileBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+
+            // Toggle core visibility
+            nav.classList.toggle('hidden');
+
+            // Add/remove mobile styling classes
+            if (!nav.classList.contains('hidden')) {
+                // Show menu
+                nav.classList.add('absolute', 'top-full', 'left-0', 'w-full', 'bg-primary-900', 'flex-col', 'p-4', 'shadow-custom', 'z-50', 'flex', 'items-start');
+                nav.classList.remove('items-center', 'lg:flex', 'gap-1');
+                nav.classList.add('gap-4');
+
+                // Adjust dropdowns for mobile
+                const dropdowns = nav.querySelectorAll('.dropdown-menu');
+                dropdowns.forEach(dd => {
+                    dd.classList.remove('absolute', 'top-full', 'mt-1', 'shadow-custom-hover', 'border', 'border-neutral-200', 'bg-white');
+                    dd.classList.add('relative', 'w-full', 'mt-2', 'bg-transparent', 'border-none', 'shadow-none', 'pl-4');
+
+                    // update links inside dropdown
+                    const links = dd.querySelectorAll('a');
+                    links.forEach(link => {
+                        link.classList.remove('text-neutral-700', 'hover:bg-primary-50', 'hover:text-primary-700');
+                        link.classList.add('text-neutral-200', 'hover:text-secondary-300');
+                    });
+                });
+
+            } else {
+                // Hide menu - reset classes
+                nav.classList.remove('absolute', 'top-full', 'left-0', 'w-full', 'bg-primary-900', 'flex-col', 'p-4', 'shadow-custom', 'z-50', 'flex', 'items-start', 'gap-4');
+                nav.classList.add('items-center', 'lg:flex', 'gap-1');
+
+                // Reset dropdowns
+                const dropdowns = nav.querySelectorAll('.dropdown-menu');
+                dropdowns.forEach(dd => {
+                    dd.classList.add('absolute', 'top-full', 'mt-1', 'shadow-custom-hover', 'border', 'border-neutral-200', 'bg-white');
+                    dd.classList.remove('relative', 'w-full', 'mt-2', 'bg-transparent', 'border-none', 'shadow-none', 'pl-4', 'block');
+                    dd.classList.add('hidden'); // Ensure they are hidden
+
+                    const links = dd.querySelectorAll('a');
+                    links.forEach(link => {
+                        link.classList.add('text-neutral-700', 'hover:bg-primary-50', 'hover:text-primary-700');
+                        link.classList.remove('text-neutral-200', 'hover:text-secondary-300');
+                    });
+                });
+            }
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!nav.contains(e.target) && !mobileBtn.contains(e.target) && !nav.classList.contains('hidden')) {
+                mobileBtn.click(); // trigger the same toggle logic
+            }
+        });
+
+        // Handle dropdown clicks on mobile
+        const dropdownBtns = nav.querySelectorAll('.dropdown > button');
+        dropdownBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                // Only act on mobile (when nav has w-full)
+                if (nav.classList.contains('w-full')) {
+                    e.preventDefault();
+                    const menu = btn.nextElementSibling;
+                    if (menu && menu.classList.contains('dropdown-menu')) {
+                        menu.classList.toggle('hidden');
+                        menu.classList.toggle('block');
+                    }
+                }
+            });
+        });
+    }
+}
+
 // run on DOM ready
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', () => {
         initSearch();
         initLanguageToggle();
+        initMobileMenu();
     });
 } else {
     initSearch();
     initLanguageToggle();
+    initMobileMenu();
 }
